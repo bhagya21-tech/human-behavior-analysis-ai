@@ -165,7 +165,7 @@ Dataset Source:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/human-behavior-analysis-ai.git
+git clone https://github.com/bhagya21-tech/human-behavior-analysis-ai.git
 cd human-behavior-analysis-ai
 ```
 
