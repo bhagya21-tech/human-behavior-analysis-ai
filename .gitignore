@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc 
+
+# Virtual Environment 
+venv/
+venv310/
+
+# Model Weights 
+*.pth 
+
+# Dataset 
+data/fer2013
+
+# Logs 
+*.log 
+
+# VS Code 
+.vscode/
+
+# Streamlit cache 
+.streamlit/
+
+# OS files 
+.DS_Store
+Thumbs.db
