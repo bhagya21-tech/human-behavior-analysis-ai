@@ -1,301 +1,98 @@
-# Human Behavior Analysis AI
+# 🧠 AI Interview & Human Behavior Analyzer
 
-A real-time multimodal AI system that combines facial emotion recognition, posture analysis, temporal smoothing, and behavioral fusion to understand human behavioral states using computer vision and deep learning.
+An AI-powered Human Behavior Analysis Platform that evaluates emotions, posture, attention levels, and behavioral patterns from images and interview videos using Computer Vision and Deep Learning.
 
----
+## 🚀 Features
 
-# Project Overview
+### Image Analysis
 
-This project analyzes:
+* Facial Emotion Recognition
+* Posture Detection
+* Attention Score Calculation
+* Behavioral Assessment
 
-* Facial emotions
-* Human posture
-* Behavioral state
-* Temporal emotion consistency
-* Real-time posture trends
-* Session analytics
+### Video Analysis
 
-The system combines multiple computer vision modules into a unified behavioral intelligence pipeline.
+* Frame-by-frame Interview Analysis
+* Emotion Timeline
+* Attention Timeline
+* Confidence Tracking
+* Emotion Distribution Analytics
 
----
+## 🎯 Outputs
 
-# Features
+* Dominant Emotion
+* Confidence Score
+* Posture Analysis
+* Attention Score
+* Behavioral State
+* Interactive Analytics Dashboard
 
-## Real-Time Emotion Detection
+## 🛠 Tech Stack
 
-* CNN-based emotion recognition
-* FER2013 dataset training
-* Confidence score prediction
-* Temporal emotion smoothing
-
-## Posture Detection
-
-* Full-body landmark detection using MediaPipe
-* Straight vs Slouched posture analysis
-* Real-time skeletal tracking
-
-## Behavioral Fusion Engine
-
-Combines:
-
-* Emotion
-* Posture
-* Temporal consistency
-
-Predicts:
-
-* Attentive
-* Disengaged
-* Confident
-* Low Confidence
-* Neutral behavioral states
-
-## Temporal Stabilization
-
-* Reduces prediction flickering
-* Rolling buffer smoothing
-* Stable real-time inference
-
-## Behavior Analytics Dashboard
-
-* Emotion frequency graphs
-* Posture statistics
-* Behavioral state analytics
-* Session-based insights
-
----
-
-# Tech Stack
-
-## Computer Vision
-
+* Python
+* PyTorch
 * OpenCV
 * MediaPipe
-
-## Deep Learning
-
-* PyTorch
-* TorchVision
-
-## Data & Analytics
-
-* Pandas
-* Matplotlib
+* Streamlit
+* Plotly
 * NumPy
+* Pandas
 
----
+## 📂 Project Structure
 
-# Project Architecture
+```python
+human-behavior-analyzer/
 
-```text
-Webcam Input
-      ↓
-Face Detection + Pose Detection
-      ↓
-Emotion CNN + Posture Analysis
-      ↓
-Temporal Smoothing
-      ↓
-Fusion Engine
-      ↓
-Behavior Prediction
-      ↓
-CSV Logging
-      ↓
-Analytics Dashboard
-```
-
----
-
-# Folder Structure
-
-```text
-emotion_posture_fusion/
-│
 ├── app/
-│   ├── main.py
-│   ├── camera.py
-│   ├── emotion_detector.py
-│   ├── emotion_model.py
-│   ├── posture_detector.py
-│   ├── fusion_engine.py
-│   ├── emotion_tracker.py
-│   ├── state_tracker.py
-│   ├── logger.py
-│
-├── data/
-│   ├── fer2013/
-│   ├── behavior_log.csv
-│
+
+│ ├── emotion_detector.py
+
+│ ├── posture_detector.py
+
+│ ├── attention_score.py
+
+│ ├── behavior_analyzer.py
+
+│ └── video_analyzer.py
+
 ├── models/
-│   ├── emotion_model/
-│       ├── emotion_model.pth
-│
-├── analytics_dashboard.py
-├── train_emotion_model.py
+
+│ └── emotion_model/
+
+├── uploads/
+
+├── streamlit_app.py
+
 ├── requirements.txt
-├── README.md
+
+└── README.md
 ```
 
----
+## 🚀 Run Locally
 
-# Dataset
+```python
+Install dependencies:
 
-## FER2013 Dataset
-
-Used for training facial emotion recognition model.
-
-Classes:
-
-* Angry
-* Disgust
-* Fear
-* Happy
-* Sad
-* Surprise
-* Neutral
-
-Dataset Source:
-[https://www.kaggle.com/datasets/msambare/fer2013](https://www.kaggle.com/datasets/msambare/fer2013)
-
----
-
-# Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/bhagya21-tech/human-behavior-analysis-ai.git
-cd human-behavior-analysis-ai
-```
-
-## Create Virtual Environment
-
-```bash
-python -m venv venv310
-```
-
-## Activate Environment
-
-### Windows
-
-```bash
-venv310\Scripts\activate
-```
-
-### Linux/Mac
-
-```bash
-source venv310/bin/activate
-```
-
----
-
-# Install Dependencies
-
-```bash
 pip install -r requirements.txt
+
+Run application:
+
+streamlit run streamlit_app.py
 ```
 
----
+## 📈 Future Improvements
 
-# Train Emotion Model
+* AI Interview Report Generation (PDF)
+* Fatigue Detection
+* Eye Gaze Tracking
+* Confidence Prediction
+* FastAPI Backend
+* Docker Deployment
+* Cloud Deployment
 
-```bash
-python train_emotion_model.py
-```
-
----
-
-# Run Main Application
-
-```bash
-python -m app.main
-```
-
----
-
-# Run Analytics Dashboard
-
-```bash
-python analytics_dashboard.py
-```
-
----
-
-# Example Outputs
-
-## Real-Time Detection
-
-* Emotion prediction
-* Confidence score
-* Skeleton tracking
-* Behavioral state analysis
-
-## Analytics Dashboard
-
-* Emotion distribution graphs
-* Posture pie charts
-* Behavioral state statistics
-
----
-
-# Key AI Concepts Implemented
-
-* Convolutional Neural Networks (CNN)
-* Emotion Recognition
-* Pose Estimation
-* Temporal Smoothing
-* Real-Time Inference
-* Human Behavior Analysis
-* Multimodal AI Fusion
-* Computer Vision Pipelines
-* Behavioral Analytics
-
----
-
-# Future Improvements
-
-* Real-time Streamlit dashboard
-* Attention tracking
-* Fatigue detection
-* Interview performance analysis
-* Head pose estimation
-* Eye gaze tracking
-* FastAPI deployment
-* Docker containerization
-* Cloud deployment
-* Transformer-based emotion recognition
-
----
-
-# Resume Description
-
-Built a multimodal human behavior analysis system combining CNN-based facial emotion recognition, posture estimation, temporal smoothing, and behavioral fusion to infer real-time human behavioral states using computer vision and deep learning.
-
----
-
-# Skills Demonstrated
-
-* AI/ML Engineering
-* Computer Vision
-* Deep Learning
-* PyTorch
-* Real-Time Video Processing
-* Model Training & Evaluation
-* Behavioral Analytics
-* Data Visualization
-* Software Engineering
-* Debugging & Environment Management
-
----
-
-# Author
+## 👨‍💻 Author
 
 Bhagyashri Raut
 
----
-
-# License
-
-This project is licensed under the MIT License.
+GitHub: https://github.com/bhagya21-tech
