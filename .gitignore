@@ -20,6 +20,7 @@ data/fer2013
 
 # Streamlit cache 
 .streamlit/
+uploads/*
 
 # OS files 
 .DS_Store
