@@ -2,8 +2,8 @@ streamlit
 streamlit-autorefresh
 opencv-python-headless==4.10.0.84
 mediapipe==0.10.14
-torch
-torchvision
+torch==2.2.2
+torchvision==0.17.2
 numpy==1.26.4
 pandas
 plotly
